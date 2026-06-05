@@ -27,21 +27,21 @@ if st.session_state.paso == "pregunta_1":
     if st.session_state.intentos_no == 0:
         st.subheader("Me compras una salchipapa? 🥺")
     elif st.session_state.intentos_no == 1:
-        st.subheader("¿¿Segura que no quieres?? 🧐")
+        st.subheader("Pero solo una salchipapa clasicaaaa 🧐")
     elif st.session_state.intentos_no == 2:
         st.subheader("Vamos di que siiii 🙏✨")
     elif st.session_state.intentos_no == 3:
         st.subheader("Tu sabes que si quiereees 😏🍔")
     elif st.session_state.intentos_no == 4:
-        st.subheader("Tu sabes que si quiereees 😏🍔")
+        st.subheader("Y una salchipapititaa??🥺🥺")
     elif st.session_state.intentos_no == 5:
-        st.subheader("Tu sabes que si quiereees 😏🍔")
+        st.subheader("Una salchipapitititita??🥺👅")
     elif st.session_state.intentos_no == 6:
-        st.subheader("Tu sabes que si quiereees 😏🍔")
+        st.subheader("Solo las papitas y poquito hotdog?? 👅👅 ")
     elif st.session_state.intentos_no == 7:
-        st.subheader("Tu sabes que si quiereees 😏🍔")
+        st.subheader("Solo papitaaas??🙂🙂")
     elif st.session_state.intentos_no == 8:
-        st.subheader("Tu sabes que si quiereees 😏🍔")
+        st.subheader("Yaya una salchipapa de S/2 sin cremas :3")
 
     # Crear los dos botones
     col1, col2 = st.columns(2)
@@ -63,7 +63,7 @@ if st.session_state.paso == "pregunta_1":
 
 # --- PASO 2: EL FLUJO DEL SÍ (PREGUNTAR POR EL LUGAR) ---
 elif st.session_state.paso == "pregunta_lugar":
-    st.success("Muchas graciaaaaaaaas :DDD 🎉")
+    st.success("Sabia que dirias que siii :DDD 🎉")
     st.write("¿De dónde me comprarás?")
     
     lugar = st.text_input("Escribe el lugar aquí:", placeholder="Ej. El carrito de la esquina...")
@@ -93,7 +93,7 @@ elif st.session_state.paso == "pantalla_enojo":
     st.title("🚨 OK YA NO QUIERO NADA 😡😤")
     
     # Un texto mediano abajo para dar contexto dramático
-    st.subheader("¡Te lo perdiste! 🙄💅")
+    st.subheader("Yo que al final te iba invitar🙄")
     
     st.write("") # Espacio en blanco
     
