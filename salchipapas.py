@@ -31,7 +31,7 @@ if st.session_state.paso == "pregunta_1":
     elif st.session_state.intentos_no == 2:
         st.subheader("Vamos di que siiii 🙏✨")
     elif st.session_state.intentos_no == 3:
-        st.subheader("Tu sabes que si quiereees 😏🍔")
+        st.subheader("Tu sabes que si quiereees 😏")
     elif st.session_state.intentos_no == 4:
         st.subheader("Y una salchipapititaa??🥺🥺")
     elif st.session_state.intentos_no == 5:
@@ -42,6 +42,18 @@ if st.session_state.paso == "pregunta_1":
         st.subheader("Solo papitaaas??🙂🙂")
     elif st.session_state.intentos_no == 8:
         st.subheader("Yaya una salchipapa de S/2 sin cremas :3")
+    elif st.session_state.intentos_no == 9:
+        st.subheader("Salchipapa de S/1 ???😔😔")
+    elif st.session_state.intentos_no == 10:
+        st.subheader("Tu te compras y me das 5 papitas y 2 hotdog😋😋😋")
+    elif st.session_state.intentos_no == 11:
+        st.subheader("Solo 4 papitas???😔😔")
+    elif st.session_state.intentos_no == 12:
+        st.subheader("3 papitaaa???😑😑")
+    elif st.session_state.intentos_no == 13:
+        st.subheader("1 papita????🙃🙃")
+    elif st.session_state.intentos_no == 14:
+        st.subheader("una pisca de papitas?🙃🙃🙃🙃")
 
     # Crear los dos botones
     col1, col2 = st.columns(2)
@@ -56,7 +68,7 @@ if st.session_state.paso == "pregunta_1":
             st.session_state.intentos_no += 1
             
             # Si ya rechazó 4 veces (el inicial + 3 insistencias), va a la pantalla de enojo
-            if st.session_state.intentos_no >= 9:
+            if st.session_state.intentos_no >= 15:
                 st.session_state.paso = "pantalla_enojo"
             
             st.rerun()
