@@ -27,10 +27,20 @@ if st.session_state.paso == "pregunta_1":
     if st.session_state.intentos_no == 0:
         st.subheader("Me compras una salchipapa? 🥺")
     elif st.session_state.intentos_no == 1:
-        st.subheader("¿¿Estas segura?? 🧐")
+        st.subheader("¿¿Segura que no quieres?? 🧐")
     elif st.session_state.intentos_no == 2:
         st.subheader("Vamos di que siiii 🙏✨")
     elif st.session_state.intentos_no == 3:
+        st.subheader("Tu sabes que si quiereees 😏🍔")
+    elif st.session_state.intentos_no == 4:
+        st.subheader("Tu sabes que si quiereees 😏🍔")
+    elif st.session_state.intentos_no == 5:
+        st.subheader("Tu sabes que si quiereees 😏🍔")
+    elif st.session_state.intentos_no == 6:
+        st.subheader("Tu sabes que si quiereees 😏🍔")
+    elif st.session_state.intentos_no == 7:
+        st.subheader("Tu sabes que si quiereees 😏🍔")
+    elif st.session_state.intentos_no == 8:
         st.subheader("Tu sabes que si quiereees 😏🍔")
 
     # Crear los dos botones
@@ -46,7 +56,7 @@ if st.session_state.paso == "pregunta_1":
             st.session_state.intentos_no += 1
             
             # Si ya rechazó 4 veces (el inicial + 3 insistencias), va a la pantalla de enojo
-            if st.session_state.intentos_no >= 4:
+            if st.session_state.intentos_no >= 9:
                 st.session_state.paso = "pantalla_enojo"
             
             st.rerun()
