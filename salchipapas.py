@@ -17,7 +17,7 @@ if st.session_state.paso == "pregunta_1":
     if st.session_state.intentos_no == 0:
         st.subheader("Me compras una salchipapa? 🥺")
     elif st.session_state.intentos_no == 1:
-        st.subheader("¿¿Estas segura?? 🧐")
+        st.subheader("¿¿Una salchipapita pequeña?? 🧐")
     elif st.session_state.intentos_no == 2:
         st.subheader("Vamos di que siiii 🙏✨")
     elif st.session_state.intentos_no == 3:
@@ -73,9 +73,9 @@ elif st.session_state.paso == "pantalla_final_si":
 # --- PASO 4: PANTALLA FINAL DEL NO (OK YA NO QUIERO NADA) ---
 elif st.session_state.paso == "pantalla_enojo":
     # Ponemos el título gigante usando formato HTML h1 personalizado
-    st.markdown("<h1 style='text-align: center; color: red; font-size: 60px;'>OK YA NO QUIERO NADA 😡😤</h1>", unsafe_html=True)
+    st.markdown("<h1 style='text-align: center; color: red; font-size: 60px; font-weight: bold;'>OK YA NO QUIERO NADA 😡😤</h1>", unsafe_html=True)
     
     # Botón de arrepentimiento para darle otra oportunidad
-    if st.button("Perdón, ¡sí quiero!🥺"):
+    if st.button("Perdón, ¡sí quiero!🥺", use_container_width=True):
         st.session_state.paso = "pregunta_lugar"
         st.rerun()
