@@ -27,7 +27,7 @@ if st.session_state.paso == "pregunta_1":
     if st.session_state.intentos_no == 0:
         st.subheader("Me compras una salchipapa? 🥺")
     elif st.session_state.intentos_no == 1:
-        st.subheader("Pero solo una salchipapa clasicaaaa 🧐")
+        st.subheader("Pero solo una salchipapa clasicaaaa :pp")
     elif st.session_state.intentos_no == 2:
         st.subheader("Vamos di que siiii 🙏✨")
     elif st.session_state.intentos_no == 3:
@@ -102,10 +102,10 @@ elif st.session_state.paso == "pantalla_final_si":
 elif st.session_state.paso == "pantalla_enojo":
     
     # st.title es el texto más grande nativo de Streamlit, 100% seguro contra errores
-    st.title("🚨 OK YA NO QUIERO NADA 😡😤")
+    st.title("OK YA NO QUIERO NADA :VVV")
     
     # Un texto mediano abajo para dar contexto dramático
-    st.subheader("Yo que al final te iba invitar🙄")
+    st.subheader("Yo que al final te iba invitar😒😒")
     
     st.write("") # Espacio en blanco
     
